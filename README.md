@@ -50,10 +50,14 @@ Algorithms/
 │   │   ├── hashtable_basico.go
 │   │   ├── otimizado/
 │   │   └── README.md
-│   └── linkedlist/        # Lista Ligada
-│       ├── linkedlist_basico.go
+│   ├── linkedlist/        # Lista Ligada
+│   │   ├── linkedlist_basico.go
+│   │   ├── otimizado/
+│   │   ├── doubly/
+│   │   └── README.md
+│   └── knn/               # K-Nearest Neighbors
+│       ├── knn_basico.go
 │       ├── otimizado/
-│       ├── doubly/
 │       └── README.md
 ├── python/                # Implementações em Python ✅
 │   ├── bfs/               # Busca em Largura
@@ -68,8 +72,12 @@ Algorithms/
 │   │   ├── hashtable_basico.py
 │   │   ├── otimizado/
 │   │   └── README.md
-│   └── linkedlist/        # Lista Ligada
-│       ├── linkedlist_basico.py
+│   ├── linkedlist/        # Lista Ligada
+│   │   ├── linkedlist_basico.py
+│   │   ├── otimizado/
+│   │   └── README.md
+│   └── knn/               # K-Nearest Neighbors
+│       ├── knn_basico.py
 │       ├── otimizado/
 │       └── README.md
 ├── java/                  # Implementações em Java ✅
@@ -85,8 +93,12 @@ Algorithms/
 │   │   ├── HashTableBasico.java
 │   │   ├── otimizado/
 │   │   └── README.md
-│   └── linkedlist/        # Lista Ligada
-│       ├── LinkedListBasico.java
+│   ├── linkedlist/        # Lista Ligada
+│   │   ├── LinkedListBasico.java
+│   │   ├── otimizado/
+│   │   └── README.md
+│   └── knn/               # K-Nearest Neighbors
+│       ├── KNNBasico.java
 │       ├── otimizado/
 │       └── README.md
 └── README.md
@@ -102,6 +114,7 @@ Algorithms/
 | 🛣️ | **Dijkstra** - Shortest Path | **Dijkstra** - Caminho Mais Curto | O((V+E)logV) |
 | 🗂️ | **Hash Table** - Key-Value Store | **Hash Table** - Armazenamento Chave-Valor | O(1) avg |
 | 🔗 | **Linked List** - Dynamic Structure | **Lista Ligada** - Estrutura Dinâmica | O(n) |
+| 🤖 | **KNN** - K-Nearest Neighbors | **KNN** - K-Vizinhos Mais Próximos | O(n·d) |
 
 </div>
 
@@ -124,6 +137,10 @@ cd go/hashtable/otimizado && go run hashtable_otimizado.go
 # Linked List
 cd go/linkedlist && go run linkedlist_basico.go
 cd go/linkedlist/otimizado && go run linkedlist_otimizado.go
+
+# KNN
+cd go/knn && go run knn_basico.go
+cd go/knn/otimizado && go run knn_otimizado.go
 ```
 
 ### Python
@@ -143,6 +160,10 @@ cd python/hashtable/otimizado && python hashtable_otimizado.py
 # Linked List
 cd python/linkedlist && python linkedlist_basico.py
 cd python/linkedlist/otimizado && python linkedlist_otimizado.py
+
+# KNN
+cd python/knn && python knn_basico.py
+cd python/knn/otimizado && python knn_otimizado.py
 ```
 
 ### Java
@@ -165,6 +186,10 @@ javac hashtable/otimizado/*.java && java hashtable.otimizado.ExemploHashTableOti
 # Linked List
 javac linkedlist/*.java && java LinkedListBasico
 javac linkedlist/otimizado/*.java && java linkedlist.otimizado.ExemploLinkedListOtimizada
+
+# KNN
+javac knn/*.java && java KNNBasico
+javac knn/otimizado/*.java && java KNNOtimizado
 ```
 
 - **Básico**: Implementação O(V²) com matriz de adjacência
@@ -245,6 +270,7 @@ cd go/linkedlist/doubly && go run doubly_linkedlist_basico.go
 | **Dijkstra** | Heap + Lista | O((V+E)log V) | O(V+E) | Grafos com pesos |
 | **Hash Table** | Array + Listas | O(1) médio | O(n) | Acesso por chave |
 | **Lista Ligada** | Ponteiros | O(1) inserção | O(n) | Inserção dinâmica |
+| **KNN** | Arrays/Listas | O(n·d) | O(n·d) | Classificação/Recomendação |
 
 ## 🛠️ Tecnologias
 
@@ -261,6 +287,7 @@ cd go/linkedlist/doubly && go run doubly_linkedlist_basico.go
 | Dijkstra | ✅ | ✅ | ✅ | ✅ |
 | Hash Table | ✅ | ✅ | ✅ | ✅ |
 | Linked List | ✅ | ✅ | ✅ | ✅ |
+| KNN | ✅ | ✅ | ✅ | ⏳ |
 
 ### 🟢 Python (Completo)
 | Algoritmo | Básico | Otimizado | README | Testes |
@@ -269,6 +296,7 @@ cd go/linkedlist/doubly && go run doubly_linkedlist_basico.go
 | Dijkstra | ✅ | ✅ | ✅ | ✅ |
 | Hash Table | ✅ | ✅ | ✅ | ✅ |
 | Linked List | ✅ | ✅ | ✅ | ✅ |
+| KNN | ✅ | ✅ | ✅ | ⏳ |
 
 ### 🟢 Java (Completo)
 | Algoritmo | Básico | Otimizado | README | Testes |
@@ -277,6 +305,7 @@ cd go/linkedlist/doubly && go run doubly_linkedlist_basico.go
 | Dijkstra | ✅ | ✅ | ✅ | ✅ |
 | Hash Table | ✅ | ✅ | ✅ | ✅ |
 | Linked List | ✅ | ✅ | ✅ | ✅ |
+| KNN | ✅ | ✅ | ✅ | ⏳ |
 
 ## 🚀 Execução por Linguagem
 
@@ -297,6 +326,10 @@ cd go/hashtable/otimizado && go run hashtable_otimizado.go
 # Linked List
 cd go/linkedlist && go run linkedlist_basico.go
 cd go/linkedlist/otimizado && go run linkedlist_otimizado.go
+
+# KNN
+cd go/knn && go run knn_basico.go
+cd go/knn/otimizado && go run knn_otimizado.go
 ```
 
 ### Python
@@ -316,6 +349,10 @@ cd python/hashtable/otimizado && python hashtable_otimizado.py
 # Linked List
 cd python/linkedlist && python linkedlist_basico.py
 cd python/linkedlist/otimizado && python linkedlist_otimizado.py
+
+# KNN
+cd python/knn && python knn_basico.py
+cd python/knn/otimizado && python knn_otimizado.py
 ```
 
 ### Java
@@ -338,6 +375,10 @@ javac hashtable/otimizado/*.java && java hashtable.otimizado.ExemploHashTableOti
 # Linked List
 javac linkedlist/*.java && java LinkedListBasico
 javac linkedlist/otimizado/*.java && java linkedlist.otimizado.ExemploLinkedListOtimizada
+
+# KNN
+javac knn/*.java && java KNNBasico
+javac knn/otimizado/*.java && java KNNOtimizado
 ```
 
 ### 🤝 How to Contribute | Como Contribuir
