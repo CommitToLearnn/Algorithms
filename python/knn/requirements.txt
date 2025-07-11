@@ -1,0 +1,6 @@
+# Dependências para o KNN Otimizado
+numpy>=1.20.0
+
+# Para desenvolvimento e testes
+# matplotlib>=3.3.0  # Para visualizações (opcional)
+# scikit-learn>=0.24.0  # Para comparações (opcional)
