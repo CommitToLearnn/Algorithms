@@ -29,78 +29,46 @@
 
 <div align="center">
   <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python&theme=dark" />
+  </a>
+  <p><i>🆕 Novos algoritmos implementados em Python | New algorithms implemented in Python</i></p>
+  <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=go,python,java&theme=dark" />
   </a>
+  <p><i>📚 Algoritmos existentes em múltiplas linguagens | Existing algorithms in multiple languages</i></p>
 </div>
 
 ### 📁 Repository Structure | Estrutura do Repositório
 
 ```
 Algorithms/
+├── python/                 # Implementações em Python ✅
+│   ├── bfs/               # Busca em Largura
+│   ├── dijkstra/          # Algoritmo de Dijkstra  
+│   ├── hashtable/         # Tabela Hash
+│   ├── knn/               # K-Nearest Neighbors
+│   ├── linkedlist/        # Lista Ligada
+│   ├── simhash/           # 🆕 SimHash - Detecção de Similaridade
+│   ├── sha/               # 🆕 SHA-256 - Hash Criptográfico
+│   ├── inverted_index/    # 🆕 Índice Invertido com Hash
+│   ├── ocr/               # 🆕 OCR - Reconhecimento Óptico
+│   ├── fourier/           # 🆕 Transformada de Fourier
+│   ├── naive_bayes/       # 🆕 Classificador Naive Bayes
+│   └── ... mais algoritmos
 ├── go/                     # Implementações em Go ✅
 │   ├── bfs/               # Busca em Largura
-│   │   ├── bfs_basico.go
-│   │   ├── otimizado/
-│   │   └── README.md
 │   ├── dijkstra/          # Algoritmo de Dijkstra
-│   │   ├── dijkstra_basico.go
-│   │   ├── otimizado/
-│   │   └── README.md
 │   ├── hashtable/         # Tabela Hash
-│   │   ├── hashtable_basico.go
-│   │   ├── otimizado/
-│   │   └── README.md
+│   ├── knn/               # K-Nearest Neighbors
 │   ├── linkedlist/        # Lista Ligada
-│   │   ├── linkedlist_basico.go
-│   │   ├── otimizado/
-│   │   ├── doubly/
-│   │   └── README.md
-│   └── knn/               # K-Nearest Neighbors
-│       ├── knn_basico.go
-│       ├── otimizado/
-│       └── README.md
-├── python/                # Implementações em Python ✅
+│   └── ... mais algoritmos
+├── java/                   # Implementações em Java ✅
 │   ├── bfs/               # Busca em Largura
-│   │   ├── bfs_basico.py
-│   │   ├── otimizado/
-│   │   └── README.md
 │   ├── dijkstra/          # Algoritmo de Dijkstra
-│   │   ├── dijkstra_basico.py
-│   │   ├── otimizado/
-│   │   └── README.md
 │   ├── hashtable/         # Tabela Hash
-│   │   ├── hashtable_basico.py
-│   │   ├── otimizado/
-│   │   └── README.md
+│   ├── knn/               # K-Nearest Neighbors
 │   ├── linkedlist/        # Lista Ligada
-│   │   ├── linkedlist_basico.py
-│   │   ├── otimizado/
-│   │   └── README.md
-│   └── knn/               # K-Nearest Neighbors
-│       ├── knn_basico.py
-│       ├── otimizado/
-│       └── README.md
-├── java/                  # Implementações em Java ✅
-│   ├── bfs/               # Busca em Largura
-│   │   ├── BFSBasico.java
-│   │   ├── otimizado/
-│   │   └── README.md
-│   ├── dijkstra/          # Algoritmo de Dijkstra
-│   │   ├── DijkstraBasico.java
-│   │   ├── otimizado/
-│   │   └── README.md
-│   ├── hashtable/         # Tabela Hash
-│   │   ├── HashTableBasico.java
-│   │   ├── otimizado/
-│   │   └── README.md
-│   ├── linkedlist/        # Lista Ligada
-│   │   ├── LinkedListBasico.java
-│   │   ├── otimizado/
-│   │   └── README.md
-│   └── knn/               # K-Nearest Neighbors
-│       ├── KNNBasico.java
-│       ├── otimizado/
-│       └── README.md
+│   └── ... mais algoritmos
 └── README.md
 ```
 
@@ -108,139 +76,85 @@ Algorithms/
 
 <div align="center">
 
-| Algorithm | Description | Descrição | Complexity |
-|:---:|:---|:---|:---:|
-| 🔍 | **BFS** - Breadth-First Search | **BFS** - Busca em Largura | O(V+E) |
-| 🛣️ | **Dijkstra** - Shortest Path | **Dijkstra** - Caminho Mais Curto | O((V+E)logV) |
-| 🗂️ | **Hash Table** - Key-Value Store | **Hash Table** - Armazenamento Chave-Valor | O(1) avg |
-| 🔗 | **Linked List** - Dynamic Structure | **Lista Ligada** - Estrutura Dinâmica | O(n) |
-| 🤖 | **KNN** - K-Nearest Neighbors | **KNN** - K-Vizinhos Mais Próximos | O(n·d) |
+| Algorithm | Description | Descrição | Complexity | Status |
+|:---:|:---|:---|:---:|:---:|
+| 🔍 | **BFS** - Breadth-First Search | **BFS** - Busca em Largura | O(V+E) | 🟢 Multi-lang |
+| 🛣️ | **Dijkstra** - Shortest Path | **Dijkstra** - Caminho Mais Curto | O((V+E)logV) | 🟢 Multi-lang |
+| 🗂️ | **Hash Table** - Key-Value Store | **Hash Table** - Armazenamento Chave-Valor | O(1) avg | 🟢 Multi-lang |
+| 🔗 | **Linked List** - Dynamic Structure | **Lista Ligada** - Estrutura Dinâmica | O(n) | 🟢 Multi-lang |
+| 🤖 | **KNN** - K-Nearest Neighbors | **KNN** - K-Vizinhos Mais Próximos | O(n·d) | 🟢 Multi-lang |
+| 📄 | **SimHash** - Document Similarity | **SimHash** - Similaridade de Documentos | O(n) | 🐍 Python |
+| 🔐 | **SHA-256** - Cryptographic Hash | **SHA-256** - Hash Criptográfico | O(n) | 🐍 Python |
+| 📚 | **Inverted Index** - Search Engine | **Índice Invertido** - Motor de Busca | O(n×m) | 🐍 Python |
+| 👁️ | **OCR** - Character Recognition | **OCR** - Reconhecimento de Caracteres | O(w×h) | 🐍 Python |
+| 🌊 | **Fourier Transform** - Signal Analysis | **Transformada de Fourier** - Análise de Sinais | O(n log n) | 🐍 Python |
+| 🧠 | **Naive Bayes** - ML Classifier | **Naive Bayes** - Classificador ML | O(n×d) | 🐍 Python |
 
 </div>
 
 ## 🚀 Quick Start | Início Rápido
 
-### Go
+### 🆕 Novos Algoritmos Python
 ```bash
-# BFS
-cd go/bfs && go run bfs_basico.go
-cd go/bfs/otimizado && go run bfs_otimizado.go
+# Executar todos os novos algoritmos
+chmod +x run_demos.sh && ./run_demos.sh
 
-# Dijkstra
-cd go/dijkstra && go run dijkstra_basico.go
-cd go/dijkstra/otimizado && go run dijkstra_otimizado.go
+# Algoritmos individuais:
+cd python/simhash && python simhash_basico.py        # Similaridade de documentos
+cd python/sha && python sha_basico.py               # Hash criptográfico
+cd python/inverted_index && python inverted_index_basico.py  # Motor de busca
+cd python/fourier && python fourier_basico.py       # Análise de sinais
+cd python/naive_bayes && python naive_bayes_basico.py # Classificação ML
 
-# Hash Table
-cd go/hashtable && go run hashtable_basico.go
-cd go/hashtable/otimizado && go run hashtable_otimizado.go
-
-# Linked List
-cd go/linkedlist && go run linkedlist_basico.go
-cd go/linkedlist/otimizado && go run linkedlist_otimizado.go
-
-# KNN
-cd go/knn && go run knn_basico.go
-cd go/knn/otimizado && go run knn_otimizado.go
+# OCR (requer NumPy)
+pip install numpy
+cd python/ocr && python ocr_basico.py
 ```
 
-### Python
+### 📚 Algoritmos Existentes
+
+#### Python
 ```bash
-# BFS
 cd python/bfs && python bfs_basico.py
-cd python/bfs/otimizado && python bfs_otimizado.py
-
-# Dijkstra
 cd python/dijkstra && python dijkstra_basico.py
-cd python/dijkstra/otimizado && python dijkstra_otimizado.py
-
-# Hash Table
 cd python/hashtable && python hashtable_basico.py
-cd python/hashtable/otimizado && python hashtable_otimizado.py
-
-# Linked List
 cd python/linkedlist && python linkedlist_basico.py
-cd python/linkedlist/otimizado && python linkedlist_otimizado.py
-
-# KNN
 cd python/knn && python knn_basico.py
-cd python/knn/otimizado && python knn_otimizado.py
 ```
 
-### Java
+#### Go
 ```bash
-# Navigate to java directory | Navegue para o diretório java
-cd java
-
-# BFS
-javac bfs/*.java && java BFSBasico
-javac bfs/otimizado/*.java && java bfs.otimizado.ExemploBFSOtimizado
-
-# Dijkstra
-javac dijkstra/*.java && java DijkstraBasico
-javac dijkstra/otimizado/*.java && java dijkstra.otimizado.ExemploDijkstraOtimizado
-
-# Hash Table
-javac hashtable/*.java && java HashTableBasico
-javac hashtable/otimizado/*.java && java hashtable.otimizado.ExemploHashTableOtimizada
-
-# Linked List
-javac linkedlist/*.java && java LinkedListBasico
-javac linkedlist/otimizado/*.java && java linkedlist.otimizado.ExemploLinkedListOtimizada
-
-# KNN
-javac knn/*.java && java KNNBasico
-javac knn/otimizado/*.java && java KNNOtimizado
-```
-
-- **Básico**: Implementação O(V²) com matriz de adjacência
-- **Otimizado**: Implementação O((V+E)log V) com heap e lista de adjacência
-- **Casos de uso**: GPS, roteamento de redes, logística
-
-```bash
-# Executar versão básica
+cd go/bfs && go run bfs_basico.go
 cd go/dijkstra && go run dijkstra_basico.go
-
-# Executar versão otimizada
-cd go/dijkstra/otimizado && go run dijkstra_otimizado.go
-```
-
-### 3. 🏗️ Tabela Hash
-**Localização**: `go/hashtable/`
-
-Estrutura de dados para acesso rápido por chave.
-
-- **Básico**: Hash simples (soma ASCII), visualização de colisões
-- **Otimizado**: Hash FNV-1a, redimensionamento automático, estatísticas
-- **Casos de uso**: Caches, índices, dicionários
-
-```bash
-# Executar versão básica
 cd go/hashtable && go run hashtable_basico.go
-
-# Executar versão otimizada
-cd go/hashtable/otimizado && go run hashtable_otimizado.go
-```
-
-### 4. 🔗 Lista Ligada
-**Localização**: `go/linkedlist/`
-
-Estrutura de dados linear com inserção dinâmica.
-
-- **Básico**: Lista simples com operações fundamentais
-- **Otimizado**: Tail pointer, múltiplas operações, tipos genéricos
-- **Dupla**: Lista duplamente ligada com navegação bidirecional
-- **Casos de uso**: Implementação de pilhas, filas, undo/redo
-
-```bash
-# Executar versão básica
 cd go/linkedlist && go run linkedlist_basico.go
-
-# Executar versão otimizada
-cd go/linkedlist/otimizado && go run linkedlist_otimizado.go
-
-# Executar lista duplamente ligada
-cd go/linkedlist/doubly && go run doubly_linkedlist_basico.go
+cd go/knn && go run knn_basico.go
 ```
+
+#### Java
+```bash
+cd java && javac bfs/*.java && java BFSBasico
+cd java && javac dijkstra/*.java && java DijkstraBasico
+cd java && javac hashtable/*.java && java HashTableBasico
+cd java && javac linkedlist/*.java && java LinkedListBasico
+cd java && javac knn/*.java && java KNNBasico
+```
+
+## 📊 Tabela de Complexidade
+
+| Algoritmo | Estrutura | Tempo | Espaço | Melhor Para |
+|-----------|-----------|-------|--------|-------------|
+| **BFS** | Lista/Matriz | O(V+E) / O(V²) | O(V) | Grafos esparsos/densos |
+| **Dijkstra** | Heap + Lista | O((V+E)log V) | O(V+E) | Grafos com pesos |
+| **Hash Table** | Array + Listas | O(1) médio | O(n) | Acesso por chave |
+| **Lista Ligada** | Ponteiros | O(1) inserção | O(n) | Inserção dinâmica |
+| **KNN** | Arrays/Listas | O(n·d) | O(n·d) | Classificação/Recomendação |
+| **SimHash** | Bit vectors | O(n) | O(1) | Detecção de duplicados |
+| **SHA-256** | Hash blocks | O(n) | O(1) | Verificação de integridade |
+| **Índice Invertido** | Hash + Listas | O(n×m) | O(n×m) | Busca textual |
+| **OCR** | Template matching | O(w×h) | O(w×h) | Reconhecimento visual |
+| **Fourier** | FFT/DFT | O(n log n) | O(n) | Análise espectral |
+| **Naive Bayes** | Probabilidade | O(n×d) | O(n×d) | Classificação de texto |
 
 ## 🎯 Como Usar Este Repositório
 
@@ -262,126 +176,60 @@ cd go/linkedlist/doubly && go run doubly_linkedlist_basico.go
 3. **Adapte para seu contexto** - customize conforme necessário
 4. **Contribua** - adicione melhorias e novas implementações
 
-## 📊 Tabela de Complexidade
-
-| Algoritmo | Estrutura | Tempo | Espaço | Melhor Para |
-|-----------|-----------|-------|--------|-------------|
-| **BFS** | Lista/Matriz | O(V+E) / O(V²) | O(V) | Grafos esparsos/densos |
-| **Dijkstra** | Heap + Lista | O((V+E)log V) | O(V+E) | Grafos com pesos |
-| **Hash Table** | Array + Listas | O(1) médio | O(n) | Acesso por chave |
-| **Lista Ligada** | Ponteiros | O(1) inserção | O(n) | Inserção dinâmica |
-| **KNN** | Arrays/Listas | O(n·d) | O(n·d) | Classificação/Recomendação |
-
-## 🛠️ Tecnologias
-
-- **Go**: Linguagem principal (performance + simplicidade)
-- **Python**: Didática e legibilidade
-- **Java**: Orientação a objetos e enterprise
-
 ## 📊 Status de Implementação
 
-### 🟢 Go (Completo)
-| Algoritmo | Básico | Otimizado | README | Testes |
-|-----------|--------|-----------|--------|--------|
-| BFS | ✅ | ✅ | ✅ | ✅ |
-| Dijkstra | ✅ | ✅ | ✅ | ✅ |
-| Hash Table | ✅ | ✅ | ✅ | ✅ |
-| Linked List | ✅ | ✅ | ✅ | ✅ |
-| KNN | ✅ | ✅ | ✅ | ⏳ |
+### 🟢 Python (11 algoritmos)
+| Algoritmo | Básico | Otimizado | README | Casos de Uso |
+|-----------|--------|-----------|--------|-------------|
+| BFS | ✅ | ✅ | ✅ | Grafos, redes sociais |
+| Dijkstra | ✅ | ✅ | ✅ | GPS, roteamento |
+| Hash Table | ✅ | ✅ | ✅ | Caches, índices |
+| Linked List | ✅ | ✅ | ✅ | Estruturas dinâmicas |
+| KNN | ✅ | ✅ | ✅ | Recomendações, ML |
+| **SimHash** | ✅ | ⏳ | ✅ | Detecção de plágio |
+| **SHA-256** | ✅ | ⏳ | ✅ | Segurança, blockchain |
+| **Índice Invertido** | ✅ | ⏳ | ✅ | Motores de busca |
+| **OCR** | ✅ | ⏳ | ✅ | Digitalização, tradução |
+| **Fourier** | ✅ | ⏳ | ✅ | Áudio, telecomunicações |
+| **Naive Bayes** | ✅ | ⏳ | ✅ | Filtro spam, sentimento |
 
-### 🟢 Python (Completo)
-| Algoritmo | Básico | Otimizado | README | Testes |
-|-----------|--------|-----------|--------|--------|
-| BFS | ✅ | ✅ | ✅ | ✅ |
-| Dijkstra | ✅ | ✅ | ✅ | ✅ |
-| Hash Table | ✅ | ✅ | ✅ | ✅ |
-| Linked List | ✅ | ✅ | ✅ | ✅ |
-| KNN | ✅ | ✅ | ✅ | ⏳ |
+### 🟢 Go (5 algoritmos)
+| Algoritmo | Básico | Otimizado | README | Performance |
+|-----------|--------|-----------|--------|-------------|
+| BFS | ✅ | ✅ | ✅ | Alta |
+| Dijkstra | ✅ | ✅ | ✅ | Alta |
+| Hash Table | ✅ | ✅ | ✅ | Alta |
+| Linked List | ✅ | ✅ | ✅ | Alta |
+| KNN | ✅ | ✅ | ✅ | Alta |
 
-### 🟢 Java (Completo)
-| Algoritmo | Básico | Otimizado | README | Testes |
-|-----------|--------|-----------|--------|--------|
-| BFS | ✅ | ✅ | ✅ | ✅ |
-| Dijkstra | ✅ | ✅ | ✅ | ✅ |
-| Hash Table | ✅ | ✅ | ✅ | ✅ |
-| Linked List | ✅ | ✅ | ✅ | ✅ |
-| KNN | ✅ | ✅ | ✅ | ⏳ |
+### 🟢 Java (5 algoritmos)
+| Algoritmo | Básico | Otimizado | README | Enterprise |
+|-----------|--------|-----------|--------|------------|
+| BFS | ✅ | ✅ | ✅ | Pronto |
+| Dijkstra | ✅ | ✅ | ✅ | Pronto |
+| Hash Table | ✅ | ✅ | ✅ | Pronto |
+| Linked List | ✅ | ✅ | ✅ | Pronto |
+| KNN | ✅ | ✅ | ✅ | Pronto |
 
-## 🚀 Execução por Linguagem
+## 🚀 Próximos Algoritmos
 
-### Go
-```bash
-# BFS
-cd go/bfs && go run bfs_basico.go
-cd go/bfs/otimizado && go run bfs_otimizado.go
+### Planejados
+- [ ] **DFS** - Depth-First Search | Busca em Profundidade
+- [ ] **Sorting** - Bubble, Quick, Merge, Heap Sort | Algoritmos de Ordenação
+- [ ] **Trees** - BST, AVL, Red-Black | Árvores
+- [ ] **Advanced Graphs** - Kruskal, Prim, Floyd-Warshall | Grafos Avançados
+- [ ] **Dynamic Programming** - Fibonacci, Knapsack, LCS | Programação Dinâmica
+- [ ] **String Algorithms** - KMP, Rabin-Karp | Algoritmos de String
 
-# Dijkstra
-cd go/dijkstra && go run dijkstra_basico.go
-cd go/dijkstra/otimizado && go run dijkstra_otimizado.go
+### Versões Otimizadas (Em Desenvolvimento)
+- [ ] **SimHash** - Índice LSH para busca rápida
+- [ ] **SHA-256** - Implementação SIMD para performance
+- [ ] **Índice Invertido** - Compressão e skip lists
+- [ ] **OCR** - Redes neurais e templates dinâmicos
+- [ ] **Fourier** - Implementação GPU-accelerated
+- [ ] **Naive Bayes** - Feature selection automática
 
-# Hash Table
-cd go/hashtable && go run hashtable_basico.go
-cd go/hashtable/otimizado && go run hashtable_otimizado.go
-
-# Linked List
-cd go/linkedlist && go run linkedlist_basico.go
-cd go/linkedlist/otimizado && go run linkedlist_otimizado.go
-
-# KNN
-cd go/knn && go run knn_basico.go
-cd go/knn/otimizado && go run knn_otimizado.go
-```
-
-### Python
-```bash
-# BFS
-cd python/bfs && python bfs_basico.py
-cd python/bfs/otimizado && python bfs_otimizado.py
-
-# Dijkstra
-cd python/dijkstra && python dijkstra_basico.py
-cd python/dijkstra/otimizado && python dijkstra_otimizado.py
-
-# Hash Table
-cd python/hashtable && python hashtable_basico.py
-cd python/hashtable/otimizado && python hashtable_otimizado.py
-
-# Linked List
-cd python/linkedlist && python linkedlist_basico.py
-cd python/linkedlist/otimizado && python linkedlist_otimizado.py
-
-# KNN
-cd python/knn && python knn_basico.py
-cd python/knn/otimizado && python knn_otimizado.py
-```
-
-### Java
-```bash
-# Navegar para o diretório java
-cd java
-
-# BFS
-javac bfs/*.java && java BFSBasico
-javac bfs/otimizado/*.java && java bfs.otimizado.ExemploBFSOtimizado
-
-# Dijkstra
-javac dijkstra/*.java && java DijkstraBasico
-javac dijkstra/otimizado/*.java && java dijkstra.otimizado.ExemploDijkstraOtimizado
-
-# Hash Table
-javac hashtable/*.java && java HashTableBasico
-javac hashtable/otimizado/*.java && java hashtable.otimizado.ExemploHashTableOtimizada
-
-# Linked List
-javac linkedlist/*.java && java LinkedListBasico
-javac linkedlist/otimizado/*.java && java linkedlist.otimizado.ExemploLinkedListOtimizada
-
-# KNN
-javac knn/*.java && java KNNBasico
-javac knn/otimizado/*.java && java KNNOtimizado
-```
-
-### 🤝 How to Contribute | Como Contribuir
+## 🤝 How to Contribute | Como Contribuir
 
 <div align="center">
 
@@ -395,7 +243,7 @@ javac knn/otimizado/*.java && java KNNOtimizado
 
 </div>
 
-### 📚 Additional Resources | Recursos Adicionais
+## 📚 Additional Resources | Recursos Adicionais
 
 **Books | Livros**
 - "Introduction to Algorithms" - Cormen, Leiserson, Rivest, Stein
@@ -412,16 +260,7 @@ javac knn/otimizado/*.java && java KNNOtimizado
 - HackerRank: Progressive challenges | Desafios progressivos
 - CodeForces: Programming competitions | Competições de programação
 
-### 🚀 Next Algorithms | Próximos Algoritmos
-
-- [ ] **DFS** - Depth-First Search | Busca em Profundidade
-- [ ] **Sorting** - Bubble, Quick, Merge, Heap Sort | Algoritmos de Ordenação
-- [ ] **Trees** - BST, AVL, Red-Black | Árvores
-- [ ] **Advanced Graphs** - Kruskal, Prim, Floyd-Warshall | Grafos Avançados
-- [ ] **Dynamic Programming** - Fibonacci, Knapsack, LCS | Programação Dinâmica
-- [ ] **String Algorithms** - KMP, Rabin-Karp | Algoritmos de String
-
-### 👤 Author | Autor
+## 👤 Author | Autor
 
 <div align="center">
   <a href="https://github.com/matheussricardoo" target="_blank">
@@ -432,13 +271,13 @@ javac knn/otimizado/*.java && java KNNOtimizado
   </a>
 </div>
 
-### 📄 License | Licença
+## 📄 License | Licença
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-### 🙏 Acknowledgments | Agradecimentos
+## 🙏 Acknowledgments | Agradecimentos
 
 - **CommitToLearn** community for inspiration | Comunidade pela inspiração
 - All contributors who helped improve this repository | Todos os contribuidores
